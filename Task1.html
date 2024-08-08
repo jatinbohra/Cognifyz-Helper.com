@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task1: Helper.com</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="image/download.png">
+</head>
+<body>
+    <!-- Header -->
+    <nav class="topnav" id="myTopnav">
+        <a href="Task1.html" class="logo">🛠HELPER.COM</a>
+        <a href="" class="nav-link"><i class=""></i> </a>
+        <a href="" class="nav-link"><i class=""></i> </a>
+        <a href="Task1.html" class="nav-link"><i class="fa fa-home"></i> Home</a>
+        <a href="service.html" class="nav-link"><i class="fa fa-wrench"></i> Services</a>
+        <a href="blog.html" class="nav-link"><i class="fa fa-rss"></i> Blog</a>
+        <a href="contact.html" class="nav-link"><i class="fa fa-envelope"></i> Contact</a>
+        <a href="about.html" class="nav-link"><i class="fa fa-list"></i> About</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="image">
+        <div class="container">
+            <div class="typewriter">"Your Trusted Helpers for<br> Every Need – From Elections to Mechanics!"</div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Copyright ©2024 All Rights Reserved | Powered by Jatin Bohra</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+</body>
+</html>

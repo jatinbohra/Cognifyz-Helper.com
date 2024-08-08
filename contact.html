@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task1: Services</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="image/download.png">
+</head>
+<body>
+    <!-- Header -->
+    <nav class="topnav" id="myTopnav">
+        <a href="Task1.html" class="logo">🛠HELPER.COM</a>
+        <a href="" class="nav-link"><i class=""></i> </a>
+        <a href="" class="nav-link"><i class=""></i> </a>
+        <a href="Task1.html" class="nav-link"><i class="fa fa-home"></i> Home</a>
+        <a href="service.html" class="nav-link"><i class="fa fa-wrench"></i> Services</a>
+        <a href="blog.html" class="nav-link"><i class="fa fa-rss"></i> Blog</a>
+        <a href="contact.html" class="nav-link"><i class="fa fa-envelope"></i> Contact</a>
+        <a href="about.html" class="nav-link"><i class="fa fa-list"></i> About</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+    <!--Header end-->
+    <!--Contact-->
+    <div class="content">
+        <h1><center><u>-:Contact:-</u></center></h1>
+        <form class="left">
+        <h4 data-toggle="tooltip" title="Map" style=" padding-left:16%;">Form:</h4>
+        <label>Full Name:</label>
+        <br><input type="text" name="name" placeholder="Enter your name" autocomplete="off" required><br>
+        <label>Email Id:</label>
+        <br><input type="email" name="email" placeholder="Enter your email" autocomplete="off" required><br>
+        <label>Phone No:</label>
+        <br><input type="phone" name="phone" placeholder="Enter your number" autocomplete="off" required><br>
+        <label>Message:</label>
+        <br> <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" autocomplete="on" required></textarea>
+        <br>
+        <input type="submit" id="submit1" name="submit" value="Submit">
+    </form>      
+   
+    <div class="right">
+        <h4 data-toggle="tooltip" title="Map">Address:</h4>
+        <Address style="margin-top:10%;">📍 Nagpur, Maharashtra - 100771</Address>
+        <br>
+        <!--google map location-->
+        <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+            <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div><script>(function () 
+            {
+                var setting = {"query":"Nagpur, Maharashtra, India","width":500,"height":300,"satellite":true,"zoom":12,"placeId":"ChIJE68fo6XA1DsRKz670AZ9sxk","cid":"0x19b37d06d0bb3e2b","coords":[21.1458004,79.0881546],"cityUrl":"/india/nagpur-32469","cityAnchorText":"Map of Nagpur, Maharashtra, India","lang":"us","queryString":"Nagpur, Maharashtra, India","centerCoord":[21.1458004,79.0881546],"id":"map-9cd199b9cc5410cd3b1ad21cab2e54d3","embed_id":"1135060"};
+                var d = document;
+                var s = d.createElement('script');
+                s.src = 'https://1map.com/js/script-for-user.js?embed_id=1135060';
+                s.async = true;
+                s.onload = function (e) {
+                window.OneMap.initMap(setting)
+            };
+            var to = d.getElementsByTagName('script')[0];
+            to.parentNode.insertBefore(s, to);
+            })();</script><a href="https://1map.com/map-embed">1 Map</a>
+        </div>
+    </div>
+    
+    
+</div>
+
+    <!--Contact end-->
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Copyright ©2024 All Rights Reserved | Powered by Jatin Bohra</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+</body>
+</html>

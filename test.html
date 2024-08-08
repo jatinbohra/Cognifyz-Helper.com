@@ -1,0 +1,113 @@
+<html>
+    <head>
+        <style>
+            
+/*.body{
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: start;
+  grid-column-gap: 10px;
+}
+.body.-open{
+  display: block;
+}
+*/
+
+p, details{
+  display:inline;
+}
+
+details {
+  position:relative;
+}
+details summary {
+  display:block;
+  cursor: pointer;
+  color: red;
+}
+details summary:focus {
+  outline:none;
+}
+details[open] {
+  display:block;
+  padding-bottom:25px;
+  padding-top:10px;
+  animation: open .2s linear;
+}
+details[open] summary {
+  position:absolute;
+  bottom: 0;
+  left:0;
+}
+
+details #open{padding-left:5px;text-align:middle;}
+details #open:after{
+    display: inline-block;
+    position:relative;
+    top: -3px;
+    padding-left: 8px;
+    content: "\00bb";
+    transform: rotate(90deg);
+}
+details[open] #open{display:none;}
+details #close{display:none;}
+details[open] #close{display:block;}
+
+::-webkit-details-marker {display: none;}
+
+
+
+
+
+@keyframes open {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+        </style>
+    </head>
+    <body>
+        <div class="body">
+            <p> The government employs individuals in two ways.
+                First, as a government servant as per the rules
+                framed under Article 309 of the Constitution or
+                based on a contract. However, the employees employed
+                under contract are not covered under Article 309.
+                Nonetheless, most of the government employment rules
+                are imbued with a degree of ambiguity and vagueness
+                for other government employees. In this regard,
+                while emphasising on the significance of labour
+                laws, Hugh Collins states that terms of the 
+                employment contract are deliberately left vague
+                in order to enable the employer to alter the 
+                specific aspects of work whenever required.Thereby, by infusing ambiguity in the drafts of employment
+                contracts, it becomes easy for the employer to seek
+                subordination from the employee which in the present
+                case are the government and the government servant
+                respectively.</p>
+          <details>
+           <summary>
+             <span id="open">read more</span> 
+             <span id="close">close</span> 
+           </summary>
+            
+            <p>Consequently, it is necessary to ensure that departmental
+                 rules provide the fundamental labour laws to the government
+                  employees to bridge the void. This condition is even more 
+                  challenging for those employed on contractual basis in 
+                  government departments. These employees do not enjoy the
+                   official status of a government servant, rendering them 
+                   ineligible for the ‘privileges’ provided in the Constitution.
+                    Moreover, they are also excluded from certain labour laws
+                     like other government employees. For instance, 
+                     the Minimum Wages Act, 1948 is not applicable to people
+                      employed in any central government undertaking</p>
+          </details>
+          </div>
+    </body>
+</html>
